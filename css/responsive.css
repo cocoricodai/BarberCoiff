@@ -1,0 +1,18 @@
+@media screen and (max-width: 1300px) {
+
+    /* LEFT SIDE */
+    .left-side {
+        width: 330px;
+    }
+
+    .left-side img {
+        top: 50px;
+        left: calc(330px /3);
+    }
+
+    /* RIGHT SIDE */
+    .right-side {
+        left: 330px;
+        
+    }
+}

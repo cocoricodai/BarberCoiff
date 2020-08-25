@@ -35,7 +35,6 @@ h1 {
     position: absolute;
     top: 50px;
     left: 150px;
-
 }
 
 .innerl {
@@ -67,9 +66,6 @@ h1 {
     margin: 10px auto;
     border-radius: 10px;
 }
-
-/* FIN LEFT SIDE */
-
 
 /* RIGHT SIDE */
 .right-side {
@@ -113,8 +109,6 @@ h1 {
     max-height: 600px;
     font-size: 24px;
 }
-
-/* FIN SECTION HOME */
 
 /* SECTION TARFIS */
 .section-tarifs {
