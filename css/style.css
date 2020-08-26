@@ -220,18 +220,17 @@ footer {
 /* MODAL */
 
 #modal {
+    position: unset;
     z-index: 100000;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     background: #845A6D;
 }
 
 .modal {
-    width: 70vw;
-    height: 70vh;
     background: #3E1929;
 }
 
