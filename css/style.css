@@ -109,6 +109,13 @@ h1 {
     max-height: 600px;
     font-size: 24px;
 }
+.innerhome a {
+    cursor: pointer;
+}
+.innerhome a img {
+    width: 54px;
+    padding-top: 30px;
+}
 
 /* SECTION TARFIS */
 .section-tarifs {
@@ -178,7 +185,7 @@ footer {
 .footer a {
     color: #FFDBB6;
     text-transform: uppercase;
-    cursor:pointer ;
+    cursor:pointer;
 }
 
 /* MODAL */
@@ -207,4 +214,9 @@ footer {
 
 .sources {
     color: #ffffff;
+}
+
+.icons8 a  {
+    color: #FFDBB6;
+    text-decoration: none;
 }
