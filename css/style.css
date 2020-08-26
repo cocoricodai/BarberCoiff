@@ -17,6 +17,35 @@ h1 {
     margin: 0;
 }
 
+/* LOADER  */
+.pre-loader {
+    height: 100vh;
+    width: 100vw;
+    background: #3E1929 ;
+    position: fixed;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attente p {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.premier-point {
+    animation: 1s point-1 infinite;
+}
+
+.deuxieme-point {
+    animation: 1s point-2 infinite;
+}
+
+.troisieme-point {
+    animation: 1s point-3 infinite;
+}
+
 /* LEFT SIDE */
 .left-side {
     height: 100%;
@@ -27,7 +56,7 @@ h1 {
     padding: 10px;
     text-align: center;
     position: fixed;
-    z-index: 10000;
+    z-index: 100;
 }
 
 .left-side img {
@@ -98,7 +127,7 @@ h1 {
     padding-top: 70px;
 }
 
-.innerhome h1 {
+.innerhome h1 , .attente h1 {
     font-family: 'Lobster', cursive;
     font-size: 104px;
     color: #FFDBB6;

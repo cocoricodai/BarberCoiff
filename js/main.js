@@ -1,3 +1,8 @@
+$( window ).on( "load", function() {
+    console.log('Serv  ok');
+    $(".pre-loader").fadeOut("slow");
+});
+
 $(document).ready(function () {
 
     // MODAL FOOTER OPEN
