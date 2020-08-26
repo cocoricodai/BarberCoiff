@@ -46,7 +46,7 @@ h1 {
 }
 
 .left-side .innerl .link a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -203,4 +203,8 @@ footer {
     float: right;
     padding: 20px;
     cursor : pointer;
+}
+
+.sources {
+    color: #ffffff;
 }
