@@ -15,3 +15,59 @@
         left: 350px;
     }
 }
+
+@media screen and (max-width: 430px) {
+
+    .inner {
+        padding: 30px;
+    }
+    .left-side {
+        display: none;
+    }
+
+
+    .right-side {
+        background: #3E1929;
+        position: absolute;
+        left: 0;
+    }
+
+    .innerhome p {
+        font-size: 30px;
+        max-width: 300px;
+        margin: 0px auto;
+    }
+
+    .innerhome h1 , .attente h1 {
+        font-size: 80px;
+    }
+    .innerhome .description {
+        padding-top: 10vh;
+    }
+
+    .section-contact {
+        min-height: 100vh;
+    }
+    .contact-horaire {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+    }
+    .flex-contact {
+        text-align: center;
+        padding-top: 100px;
+    }
+    .flex-horaire {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .images img {
+        width: calc(100vw / 2);
+    }
+
+    #modal {
+        height: 100%;
+    }
+}

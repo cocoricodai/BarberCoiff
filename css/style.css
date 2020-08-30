@@ -124,7 +124,6 @@ h1 {
     font-size: 36px;
     color: #ffffff;
     font-family: 'Lobster', cursive;
-    padding-top: 70px;
 }
 
 .innerhome h1 , .attente h1 {
@@ -187,7 +186,7 @@ h1 {
     justify-content: space-evenly;
 }
 
-/* SECTION CONTACT */
+/* SECTION PORTFOLIO */
 .section-portfolio {
     min-height: 60vh;
     
@@ -220,9 +219,9 @@ footer {
 /* MODAL */
 
 #modal {
-    position: unset;
-    z-index: 100000;
-    display: flex;
+    position: fixed;
+    z-index: 10000;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;
