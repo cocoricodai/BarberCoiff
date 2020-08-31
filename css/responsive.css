@@ -97,7 +97,7 @@
 @media screen and (max-width: 430px) {
 
     .inner {
-        padding: 30px;
+        padding: 10px;
     }
 
     .innerhome p:nth-child(1) {
