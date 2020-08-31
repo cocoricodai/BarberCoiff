@@ -17,15 +17,36 @@ h1 {
     margin: 0;
 }
 
+.inner {
+    padding: 60px;
+
+}
+
+/* NAV mobile */
+
 .logo {
     display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    background: #3E1929;
+    color: #ffffff;
+    border-bottom: 5px solid #845A6D;
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    color: #FFDBB6;
+    text-shadow: rgb(132, 90, 109) 5px 0px 0px, rgb(132, 90, 109) 4.90033px 0.993347px 0px, rgb(132, 90, 109) 4.60531px 1.94709px 0px, rgb(132, 90, 109) 4.12668px 2.82321px 0px, rgb(132, 90, 109) 3.48353px 3.58678px 0px, rgb(132, 90, 109) 2.70151px 4.20736px 0px, rgb(132, 90, 109) 1.81179px 4.6602px 0px, rgb(132, 90, 109) 0.849836px 4.92725px 0px, rgb(132, 90, 109) -0.145998px 4.99787px 0px, rgb(132, 90, 109) -1.13601px 4.86924px 0px, rgb(132, 90, 109) -2.08073px 4.54649px 0px, rgb(132, 90, 109) -2.94251px 4.04248px 0px, rgb(132, 90, 109) -3.68697px 3.37732px 0px, rgb(132, 90, 109) -4.28444px 2.57751px 0px, rgb(132, 90, 109) -4.71111px 1.67494px 0px, rgb(132, 90, 109) -4.94996px 0.7056px 0px, rgb(132, 90, 109) -4.99147px -0.291871px 0px, rgb(132, 90, 109) -4.83399px -1.27771px 0px, rgb(132, 90, 109) -4.48379px -2.2126px 0px, rgb(132, 90, 109) -3.95484px -3.05929px 0px, rgb(132, 90, 109) -3.26822px -3.78401px 0px, rgb(132, 90, 109) -2.4513px -4.35788px 0px, rgb(132, 90, 109) -1.53666px -4.75801px 0px, rgb(132, 90, 109) -0.560763px -4.96845px 0px, rgb(132, 90, 109) 0.437495px -4.98082px 0px, rgb(132, 90, 109) 1.41831px -4.79462px 0px, rgb(132, 90, 109) 2.34258px -4.41727px 0px, rgb(132, 90, 109) 3.17346px -3.86382px 0px, rgb(132, 90, 109) 3.87783px -3.15633px 0px, rgb(132, 90, 109) 4.4276px -2.32301px 0px, rgb(132, 90, 109) 4.80085px -1.39708px 0px, rgb(132, 90, 109) 4.98271px -0.415447px 0px;
+
 }
 
 /* LOADER  */
 .pre-loader {
-    height: 100vh;
-    width: 100vw;
-    background: #3E1929 ;
+    height: 100%;
+    width: 100%;
+    background: #3E1929;
     position: fixed;
     z-index: 200;
     display: flex;
@@ -33,7 +54,7 @@ h1 {
     justify-content: center;
 }
 
-.attente p {
+.loader p {
     color: #ffffff;
     font-size: 24px;
 }
@@ -70,7 +91,7 @@ h1 {
     left: 150px;
 }
 
-.innerl {
+.innerlink {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,21 +99,20 @@ h1 {
     height: 100vh;
 }
 
-.left-side .innerl .link a {
+.left-side .innerlink .link a {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     padding: 5px;
 }
 
-.left-side .innerl .link a:hover {
+.left-side .innerlink .link a:hover {
     color: #3E1929;
 }
 
 
-.left-side .innerl .link .under-link {
+.left-side .innerlink .link .under-link {
     width: 150px;
     height: 5px;
     background: #ffffff;
@@ -107,10 +127,6 @@ h1 {
     left: 450px;
     top: 0;
     right: 0;
-}
-
-.inner {
-    padding: 60px;
 }
 
 /* SECTION HOME */
@@ -130,7 +146,8 @@ h1 {
     font-family: 'Lobster', cursive;
 }
 
-.innerhome h1 , .attente h1 {
+.innerhome h1,
+.loader h1 {
     font-family: 'Lobster', cursive;
     font-size: 104px;
     color: #FFDBB6;
@@ -141,9 +158,11 @@ h1 {
     max-height: 600px;
     font-size: 24px;
 }
+
 .innerhome a {
     cursor: pointer;
 }
+
 .innerhome a img {
     width: 54px;
     padding-top: 30px;
@@ -158,6 +177,7 @@ h1 {
 .section-contact {
     min-height: 60vh;
 }
+
 .titre {
     font-family: 'Lobster', cursive;
     font-size: 64px;
@@ -172,18 +192,20 @@ h1 {
     background: #FFDBB6;
     border: 5px solid #845A6D;
     border-radius: 5px;
-    margin : 0 auto;
+    margin: 0 auto;
 }
 
 .contact-horaire {
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;
     color: #ffffff;
 }
+
 .flex-contact img {
     width: 55px;
-    
+
 }
+
 .flex-horaire {
     min-width: 400px;
     display: flex;
@@ -193,11 +215,13 @@ h1 {
 /* SECTION PORTFOLIO */
 .section-portfolio {
     min-height: 60vh;
-    
+
 }
+
 .images {
     text-align: center;
 }
+
 .images img {
     width: calc(100vw / 5);
 }
@@ -217,7 +241,7 @@ footer {
 .footer a {
     color: #FFDBB6;
     text-transform: uppercase;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /* MODAL */
@@ -240,14 +264,14 @@ footer {
 .modal a img {
     float: right;
     padding: 20px;
-    cursor : pointer;
+    cursor: pointer;
 }
 
 .sources {
     color: #ffffff;
 }
 
-.icons8 a  {
+.icons8 a {
     color: #FFDBB6;
     text-decoration: none;
 }
