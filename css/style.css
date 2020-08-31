@@ -17,6 +17,10 @@ h1 {
     margin: 0;
 }
 
+.logo {
+    display: none;
+}
+
 /* LOADER  */
 .pre-loader {
     height: 100vh;
