@@ -79,6 +79,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center ;
+        font-size: 24px;
     }
     .flex-contact {
         text-align: center;
@@ -86,8 +87,7 @@
         max-width: 300px;
     }
     .flex-horaire {
-        max-width: 400px;
-        min-width: 200px;
+        min-width: 300px;
         padding-top: 100px;
         display: flex;
         justify-content: space-evenly;
