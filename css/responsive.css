@@ -88,10 +88,13 @@
         max-width: 300px;
     }
     .flex-horaire {
-        min-width: 400px;
+        max-width: 400px;
+        min-width: 200px;
         padding-top: 100px;
         display: flex;
         justify-content: space-evenly;
+        margin: 0 auto;
+
     }
 
     .images img {
