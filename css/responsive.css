@@ -14,6 +14,11 @@
     .right-side {
         left: 350px;
     }
+    .flex-horaire {
+        max-width: 400px;
+        min-width: 200px;
+
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -38,9 +43,7 @@
         left: 250px;
     }
 
-    .flex-horaire {
-        min-width: 200px;
-    }
+    
 }
 
 @media screen and (max-width: 800px) {
