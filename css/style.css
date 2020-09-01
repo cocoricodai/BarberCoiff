@@ -168,11 +168,6 @@ h1 {
     padding-top: 30px;
 }
 
-/* SECTION TARFIS */
-.section-tarifs {
-    height: 100vh;
-}
-
 /* SECTION CONTACT */
 .section-contact {
     min-height: 60vh;
@@ -204,6 +199,12 @@ h1 {
 .flex-contact img {
     width: 55px;
 
+}
+
+.flex-contact a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
 }
 
 .flex-horaire {
