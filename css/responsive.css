@@ -130,4 +130,21 @@
         width: calc(100vw / 2);
     }
 
+    /* MODAL */
+    .modal {
+        height: 100%;
+        width: 100%;
+    }
+
+    .modal a img {
+        float: right;
+        padding: 20px;
+        cursor: pointer;
+        width: 50px;
+    }
+
+    .sources {
+        padding-top: 40px;
+    }
+
 }
