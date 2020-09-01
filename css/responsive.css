@@ -100,22 +100,22 @@
         padding: 10px;
     }
 
-    .innerhome p:nth-child(1) {
+    .home p:nth-child(1) {
         display: none;
     }
 
-    .innerhome p {
+    .home p {
         font-size: 30px;
         max-width: 300px;
         margin: 0px auto;
     }
 
-    .innerhome h1,
+    .home h1,
     .loader h1 {
         font-size: 80px;
     }
 
-    .innerhome h1 {
+    .home h1 {
         display: none;
     }
 
