@@ -18,6 +18,7 @@
 
 @media screen and (max-width: 900px) {
 
+    /* GENERAL */
 
     .inner {
         padding: 40px;
@@ -38,22 +39,21 @@
     .right-side {
         left: 250px;
     }
-
-
 }
 
 @media screen and (max-width: 800px) {
 
-
+    /* NAV MOBILE */
     .logo {
         display: flex;
     }
 
-
+    /* LEFT SIDE */
     .left-side {
         display: none;
     }
 
+    /* RIGHT SIDE */
     .right-side {
         background: #3E1929;
         position: absolute;
@@ -62,6 +62,7 @@
         height: 100%;
     }
 
+    /* SECTION CONTACT */
     .section-contact {
         min-height: 100vh;
     }
@@ -88,6 +89,8 @@
 
     }
 
+    /* SECTION PORTFOLIO */
+
     .images img {
         width: calc(100vw / 3);
     }
@@ -96,10 +99,18 @@
 
 @media screen and (max-width: 430px) {
 
+
+    /* GENERAL */
     .inner {
         padding: 10px;
     }
 
+    /* LOADER */
+    .loader h1 {
+        font-size: 60px;
+    }
+
+    /* SECTION HOME */
     .home p:nth-child(1) {
         display: none;
     }
@@ -110,21 +121,13 @@
         margin: 0px auto;
     }
 
-    .home h1,
-    .loader h1 {
-        font-size: 80px;
-    }
-
     .home h1 {
         display: none;
     }
 
-
+    /* SECTION PORTFOLIO */
     .images img {
         width: calc(100vw / 2);
     }
 
-    #modal {
-        height: 100%;
-    }
 }
