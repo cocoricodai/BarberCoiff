@@ -116,13 +116,16 @@
     }
 
     .home p {
-        font-size: 30px;
+        font-size: 48px;
         max-width: 300px;
         margin: 0px auto;
     }
 
     .home h1 {
         display: none;
+    }
+    .contact-horaire {
+        font-size: 16px;
     }
 
     /* SECTION PORTFOLIO */
