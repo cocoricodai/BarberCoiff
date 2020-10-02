@@ -224,7 +224,7 @@ h1 {
 }
 
 .images img {
-    width: calc(100vw / 5);
+    width: calc(100vw / 6);
 }
 
 /* FOOTER */
