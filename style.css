@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&family=Roboto&display=swap'); /* LOBSTER , ROBOTO , OPEN SANS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--paragraphe);
+    font-size: 100%;
+}
+
+:root {
+    --background : #1a1a2e;
+    --text : #ffffff;
+    --red : #e9445f;
+    --titre : 'Open Sans', sans-serif;
+    --paragraphe : 'Roboto', sans-serif;
+    --flex-f : column nowrap;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+h2 , h3 {
+    font-family: var(--titre);
+}
+
+.sction {
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 80vw;
+}
+
+.flex-f {
+    display: flex;
+    flex-flow: var(--flex-f);
+    -webkit-flex-flow: var(--flex-f);
+    -moz-flex-flow: var(--flex-f);
+}
+
+.soulignement {
+    background-color: var(--red);
+    height: 4px;
+}
+/******** HEADER ********/
+header#haut-de-page {
+    height: 100vh;
+    position: relative;
+}
+
+#hamburger {
+    color: #ffffff;
+    padding: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    z-index: 111;
+}
+
+#hamburger:focus{
+    color: var(--red);
+}
+
+#nav_hamburger {
+    align-items: stretch;
+    background-color: #303042;
+    display: flex;
+    flex-flow: var(--flex-f);
+    -webkit-flex-flow: var(--flex-f);
+    -moz-flex-flow: var(--flex-f);
+    justify-content: center;
+    position: absolute;
+    top: -300px;
+    transition: 0.5s;
+    width: 100%;
+    z-index: 1;
+}
+
+#nav_hamburger a {
+    border-bottom: 1px solid #ffffff;
+    color: var(--text);
+    font-family: var(--titre);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+#nav_hamburger a:visited {
+    color: var(--text);
+}
+
+#nav_hamburger a:active , #nav_hamburger a:hover , #nav_hamburger a:focus {
+    color: var(--red);
+}
+
+#nav_hamburger a:nth-child(3) {
+    display: none;
+}
+
+#logo {
+    width: 11rem;
+    padding: 1.5rem;
+}
+
+#lampe {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+#coiffeur {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 400px;
+    z-index: -2;
+}
+
+#link-right {
+    display: none;
+}
+.introduction{
+    margin: 25% 0 0 0;
+    text-align: center;
+}
+.introduction h1 {
+    color: var(--red);
+    font-family: 'Lobster' , cursive;
+    letter-spacing: 0.2rem;
+}
+#arrow-down-button {
+    font-size: 1.6rem;
+    position: absolute;
+    transform: translateX(-5%);
+    bottom: 5px;
+    animation: bouncing-arrow-responsive  4s infinite;
+    color: var(--red);
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+#arrow-down-button p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+}
+/******** COVID********/
+#covid h2 {
+    text-align: center;
+}
+
+.soulignement#soulignement_covid {
+    margin: 0 auto;
+    width: 6rem;
+}
+
+#covid .flex-f .important {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: var(--titre);
+    color: #3a86ff;
+}
+
+#covid .flex-f div p{
+    padding: 0.5rem;
+}
+/******** PRIX + HORAIRE ********/
+.titre-cache {
+    display: none;
+}
+
+#prix-horaire article {
+    background-color: #303042;
+    box-shadow: -7px 5px 5px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: -7px 5px 5px 0px rgb(0 0 0 / 75%);
+    -moz-box-shadow: -7px 5px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    padding: 1.5rem;
+}
+
+#prix-horaire table {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#prix {
+    margin-bottom: 2rem;
+}
+
+#prix table tr td:nth-child(2){
+    text-align: right;
+}
+
+.soulignement#soulignement_prix {
+    width: 3.5rem;
+}
+
+#prix h3 {
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.soulignement#soulignement_horaire {
+    width: 6rem;
+}
+
+#horaire table{
+    min-height: 40vh;
+    height: 90%;
+    text-align: center;
+}
+
+/******** PORTFOLIO ********/
+#portfolio h2 {
+    text-align: right;
+}
+
+.soulignement#soulignement_portfolio{
+    width: 7rem;
+    float: right;
+}
+.container-img {
+    margin-top: 2rem;
+}
+
+.container-img a {
+    margin: 0.25rem 0;
+}
+
+.container-img a img{
+    max-width: 100%;
+    width: 100%;
+    transition: 0.4s;
+}
+.container-img a img:hover , .container-img a img:focus {
+    transform: scale(0.95);
+    padding: 0.25rem;
+    border: 0.25rem solid var(--red);
+    border-radius: 20px;
+}
+
+form {
+    margin-top: 3rem;
+}
+form input {
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    cursor: pointer;
+    display: block;
+    font-family: var(--titre);
+    margin: 0 auto;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+    font-weight: bold;
+}
+form input:visited {
+    color: #000000;
+}
+form input:active ,form input:hover , form input:focus{
+    background-color: var(--red);
+    color: #ffffff;
+}
+
+/******** SALON ********/
+.container-salon {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    margin: auto;
+}
+.container-salon-img {
+    width: 100vw;
+    overflow: hidden;
+}
+.container-salon-img img {
+    width: 150%;
+    margin-left: -25%;
+}
+.container-salon .card {
+    padding: 20px;
+}
+
+.container-salon .card h2 {
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+/******** CONTACT ********/
+#contact {
+    width: 100%;
+}
+#contact h2 {
+    margin-left: 10vw;
+}
+.soulignement#soulignement_contact {
+    width: 6rem;
+    margin-left: 10vw;
+}
+
+.container-contact {
+    align-items: center;
+    justify-content: center;
+    margin : 1rem;
+}
+
+.container-contact a {
+    color: var(--text);
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.container-contact a:visited {
+    color: var(--text);
+}
+
+.container-contact a:active , .container-contact a:hover , .container-contact a:focus {
+    color: var(--red)
+}
+
+.container-contact a i {
+    margin-right: 1rem;
+}
+
+#contact iframe {
+    width: 100vw;
+    height: 400px;
+}
+
+/******** AVIS ********/
+#avis h2 {
+    text-align: center;
+}
+
+.soulignement#soulignement_avis {
+    width: 3.5rem;
+    margin: 0 auto;
+}
+
+.container-avis {
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.box-avis {
+    width: 100%;
+    background-color: #303042;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    box-shadow: -7px 5px 5px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: -7px 5px 5px 0px rgb(0 0 0 / 75%);
+    -moz-box-shadow: -7px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.box-avis p:first-child {
+    font-family: var(--titre);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.box-avis p:nth-child(2) {
+    font-size: 0.7rem;
+    color: var(--red);
+}
+
+.box-avis p:last-child {
+    padding-top: 1rem;
+}
+
+
+
+/******** FOOTER ********/
+footer {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    font-family: var(--titre);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer * {
+    margin: 0.5rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a:first-child{
+    color: var(--text);
+    text-decoration: underline;
+}
+footer a:first-child:visited {
+    color:var(--text) ;
+}
+
+footer a:first-child:active , footer a:first-child:hover, footer a:first-child:focus{
+    color: var(--red);
+}
+
+footer #facebook {
+    color: var(--text);
+    background-color: #0F89EC;
+    border-radius: 2.5rem;
+    padding: 0.1rem;
+    font-size: 0.9rem;
+}
+ 
+footer #facebook:active , footer #facebook:hover , footer #facebook:focus {
+    color: #0F89EC;
+    background-color: var(--text);
+}
+
+/******** Informations********/
+#informations {
+    margin: 0 auto;
+    width: 90vw;
+}
+.maquettes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-flow: var(--flex-f)
+
+}
+.titre-infos {
+    font-family: var(--titre);
+    padding: 0.5rem 0;
+    color: var(--text);
+    margin-top: 2rem;
+}
+.soulignement#soulignement_infos {
+    width: 10rem;
+    margin-bottom: 5rem;
+}
+
+.container-maquettes {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    border: 1px solid var(--red);
+    margin: 1rem 0;
+}
+.container-maquettes span {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 32px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    width: 100%;
+    background:#e94560cc;
+    color:#fff;
+    opacity:0;
+    transition:.8s;
+    font-weight: bold;
+}
+.container-maquettes span:hover ,.container-maquettes span:focus{
+    opacity: 1;
+}
+
+.img-maquettes {
+    width: 100%;
+}
+
+
+@media screen and (min-width : 760px) {
+    
+    :root {
+        --flex-f : row wrap;
+    }
+    .sction {
+        width: 75vw;
+    }
+    /******** HEADER ********/
+
+    #nav_hamburger a {
+        width: 100%;
+    }
+    #nav_hamburger a:last-child {
+        border-right: none;
+    }
+    #coiffeur {
+        width: 500px;
+    }
+
+    /******** COVID ********/
+    #covid .flex-f {
+        justify-content: center;
+    }
+
+    #covid img {
+        width: 340px;
+    }
+
+    /******** PRIX HORAIRE ********/
+    #prix-horaire {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #prix-horaire article {
+        width: 35vw;
+    }
+    #horaire table{
+
+        min-height: auto;
+    }
+    #prix {
+        margin-bottom: 0;
+    }
+
+    /******** PORTFOLIO ********/
+    .container-img a {
+        margin: 0;
+    }
+    .container-img a img {
+        width: 25vw;
+        height: 100%;
+    }
+    /******** SALON ********/
+    #salon {
+        padding: 2rem 0;
+    }
+    .container-salon {
+        width: 90vw;
+    }
+    .container-salon-img {
+        width: 100%;
+        border-radius: 0 0 10px 0;
+        -webkit-border-radius: 0 0 0 10px;
+        -moz-border-radius: 0 0 0 10px;
+        box-shadow: 5px 6px 5px 0px rgb(233 68 95 / 70%);
+        -webkit-box-shadow: 5px 6px 5px 0px rgb(233 68 95 / 70%);
+        -moz-box-shadow: 5px 6px 5px 0px rgba(233, 68, 95,0.70);
+    }
+    .container-salon-img img {
+        max-width: 75vw;
+        float: right;
+    }
+    .container-salon .card {
+        width: 70vw;
+        padding: 20px;
+        margin-top: -20px;
+        border-radius: 0 0 0 10px;
+        -webkit-border-radius: 0 0 0 10px;
+        -moz-border-radius: 0 0 0 10px;
+        background-color: #303042;
+        box-shadow: -5px 3px 5px 0px rgb(233 68 95 / 45%);
+        -webkit-box-shadow: -5px 3px 5px 0px rgb(233 68 95 / 45%);
+        -moz-box-shadow: -5px 3px 5px 0px rgba(233, 68, 95,0.45);
+    }
+
+}
+
+@media screen and (min-width : 1025px) {
+    .sction {
+        padding: 4rem 0;
+        width: 60vw;
+    }
+
+    /******** HEADER ********/
+    #hamburger {
+        display: none;
+    }
+    #nav_hamburger {
+        align-items: center;
+        background-color: initial;
+        position: inherit;
+        top: 0px;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    #nav_hamburger .bord {
+        font-size: 1.4rem;
+    }
+    #nav_hamburger .extremite {
+        font-size: 1.1rem;
+    }
+
+    #nav_hamburger a {
+        border : none;
+        width: auto;
+        z-index: 200;
+    }
+    
+    #nav_hamburger a:nth-child(3) {
+        display: block;
+    }
+    #nav_hamburger a img {
+        width: 10rem;
+    } 
+
+    .introduction  {
+        margin: 200px 0 0 20%;
+        transform: translateX(-30%);
+        width: 300px;
+    }
+    .introduction * {
+        display: inline-block;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #lampe {
+        left: 20%;
+        transform: translateX(-20%);
+        width: 150px;
+        z-index: 2;
+    }
+
+    #coiffeur {
+        width: auto;
+    }
+
+    #link-right {
+        position: fixed;
+        right: 15px;
+        bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+        height: 100px;
+        z-index: 5;
+    }
+    #link-right a {
+        color: var(--text);
+        font-size: 1.5rem;
+        padding: 0.2rem;
+        transition: 0.4s;
+    }
+
+    #link-right a:nth-child(1):visited  , #link-right a:nth-child(2):visited{
+        color: var(--text);
+    }
+
+    #link-right a:nth-child(1):active , #link-right a:nth-child(1):hover , #link-right a:nth-child(1):focus {
+        color: var(--red);
+    }
+    #link-right a:nth-child(2):active , #link-right a:nth-child(2):hover , #link-right a:nth-child(2):focus  {
+        color: #0F89EC;
+    }
+
+    #arrow-down-button {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+        animation: bouncing-arrow  4s infinite;
+    }
+    
+    #arrow-down-button p {
+        font-size: 1.1rem;
+        writing-mode: inherit;
+        margin-left: -15px;
+    }
+    /******** COVID ********/
+    #covid .flex-f {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #covid img {
+        width: 20vw;
+    }
+
+    #covid .flex-f p {
+        width: 40vw;
+    }
+
+
+    /******** PRIX HORAIRE ********/
+    #prix-horaire {
+        width: 80vw;
+        justify-content: space-around;
+    }
+
+    #prix-horaire article {
+        width: 30%;
+        min-height: 65vh;
+        padding: 3rem;
+    }
+    #horaire table{
+
+        min-height: auto;
+    }
+    #prix {
+        margin-bottom: 0;
+    }
+    /******** PORTFOLIO ********/
+    .container-img a {
+        margin: 0;
+    }
+    .container-img a img {
+        width: 20vw;
+        height: 100%;
+    }
+
+    /******** SALON********/
+    .container-salon {
+        width: 60vw;
+        margin: auto;
+    }
+    .container-salon-img img {
+        max-width: 45vw;
+        float: right;
+    }
+    .container-salon .card {
+        width: 30vw;
+        padding: 40px;
+        margin-top: -45px;
+    }
+
+
+    /******** CONTACT  ********/
+    #contact {
+        width: 60vw;
+    }
+
+    #contact h2 , .soulignement#soulignement_contact {
+        margin-left: 0;
+    }
+    /******** AVIS ********/
+    .box-avis {
+        width: 30%;
+    }
+
+    .container-maquettes {
+        width: 40vw;
+        height: 50vh;
+        justify-content: space-around;
+    }
+}
+
+/************* KEYFRAMES **************/
+@keyframes bouncing-arrow {
+    0% {
+        bottom: 50px;
+        opacity: 1;
+    }
+    
+    50% {
+        bottom: 75px;
+        opacity: 0.5;
+    }
+    100% {
+        bottom: 50px;
+        opacity: 1;
+    }
+}
+
+@keyframes bouncing-arrow-responsive {
+    0% {
+        bottom: 5px;
+        opacity: 1;
+    }
+    
+    50% {
+        bottom: 30px;
+        opacity: 0.5;
+    }
+    100% {
+        bottom: 5px;
+        opacity: 1;
+    }
+}

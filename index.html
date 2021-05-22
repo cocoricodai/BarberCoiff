@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title>BarberCoiff - Officiel - </title>
+        <link rel="shortcut icon" href="src/logo.svg" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="style.css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Informations -->
+        <meta name="author" content="Colin Depelsenaire">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="description" content="Salon de coiffure et barbier sur Morlanwelz. Hommes et Dames">
+        <meta name="keywords" content="Salon de coiffure , coiffeur , coiffeuse , hommes , dames">
+        <meta name="robots" content="index,follow">
+
+
+        <!-- LOCALISATION -->
+        <meta name="geo.region" content="BE-WHT" />
+        <meta name="geo.placename" content="Morlanwelz" />
+        <meta name="geo.position" content="50.450984;4.252356" />
+        <meta name="ICBM" content="50.450984, 4.252356" />
+
+        <!-- Icon -->
+        <script src="https://kit.fontawesome.com/6d12a4e4ad.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Entete de la page -->
+        <header id="haut-de-page">
+            <a href="javascript:void(0);" id="hamburger" onclick="Hamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav id="nav_hamburger">
+                <a href="#prix" class="extremite">Tarif</a>
+                <a href="#horaire" class="bord">Horaire</a>
+                <a href="index.html"><img src="src/logo.svg" alt="Logo de BarberCoiff"></a>
+                <a href="#portfolio" class="bord">Portfolio</a>
+                <a href="#contact" class="extremite">Contact</a>
+            </nav>
+
+            <img src="src/logo.svg" alt="Logo de BarberCoiff" id="logo">
+            <div class="introduction">
+                <p>Bienvenue dans le salon de coiffure de </p> 
+                <h1>BarberCoiff</h1>
+                <p>Hommes et dames</p>
+            </div>
+
+            <img src="src/lampe.svg" alt="Image d'une lampe qui illumine le texte" id="lampe">
+            <img src="src/coiffeur.svg" alt="Image d'un coiffeur qui coiffe son client" id="coiffeur">
+            <a id="arrow-down-button" href="#covid"><p>Covid</p><i class="fas fa-angle-double-down"></i></a>
+
+            <div id="link-right">
+                <a href="#haut-de-page"><i class="far fa-arrow-alt-circle-up"></i></a>
+                <a href="https://www.facebook.com/Barbercoiff-1187016228027978/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </header>
+
+        <main>
+            <!-- COVID -->
+            <article class="sction" id="covid">
+                <h2>Covid-19</h2>
+                <div class="soulignement" id="soulignement_covid"></div>
+                <div class="flex-f">
+                    <img src="src/covid.svg" alt="Image d'un personnage qui porte un masque chirurgical">
+                    <div>
+                        <p>Nous sommes prêts à vous accueillir en toute sécurité, dans le respect des nouvelles mesures sanitaires recommandées.</p>
+                        <p>La prise de rendez-vous se réalise exclusivement <span class="important">par téléphone</span>.</p>
+                        <p>Le port du masque en <span class="important">papier</span> est <span class="important">obligatoire</span> !</p>
+                        <p>Veuillez également attendre votre tour <span class="important">à l'extérieur</span> jusqu'au moment où l'on vous appelle.</p>
+                        <p>Merci d'avance,<br>L'équipe BarberCoiff</p>
+                    </div>
+                </div>
+            </article>
+            <!-- PRIX + HORAIRE -->
+            <section class="sction flex-f" id="prix-horaire">
+                <h2 class="titre-cache">Tarif et Horaire</h2>
+                <!-- PRIX -->
+                <article id="prix">
+                    <h2>Tarif</h2>
+                    <div class="soulignement" id="soulignement_prix"></div>
+                    <h3>Hommes</h3>
+                    <table>
+                        <tr>
+                            <td>Coupe simple</td>
+                            <td>12 €</td>
+                        </tr>
+                        <tr>
+                            <td>Coupe + gel</td>
+                            <td>15 €</td>
+                        </tr>
+                        <tr>
+                            <td>Coupe complète</td>
+                            <td>20 €</td>
+                        </tr>
+                        <tr>
+                            <td>Rasage</td>
+                            <td>10€</td>
+                        </tr>
+                    </table>
+
+                    <h3>Dames</h3>
+                    <table>
+                        <tr>
+                            <td>Coupe simple</td>
+                            <td>20 €</td>
+                        </tr>
+                        <tr>
+                            <td>Shampoing + coupe</td>
+                            <td>25 €</td>
+                        </tr>
+                        <tr>
+                            <td>Coupe + Brushing</td>
+                            <td>35 €</td>
+                        </tr>
+                        <tr>
+                            <td>Permanente</td>
+                            <td>40 €</td>
+                        </tr>
+                        <tr>
+                            <td>Permanente + coupe </td>
+                            <td>45 €</td>
+                        </tr>
+                    </table>
+                </article>
+                <!-- HORAIRE -->
+                <article id="horaire">
+                    <h2>Horaire</h2>
+                    <div class="soulignement" id="soulignement_horaire"></div>
+                    <table>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>Fermé</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>09:00–12:00 <br> 13:30–18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>09:00–12:00 <br> 13:30–18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>09:00–12:00 <br> 13:30–18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>09:00–18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Samedi</td>
+                            <td>09:00–17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dimanche</td>
+                            <td>Fermé</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+
+            <!-- PORTFOLIO -->
+            <article class="sction" id="portfolio">
+                <h2>Portfolio</h2>
+                <div class="soulignement" id="soulignement_portfolio"></div>
+                <div class="container-img flex-f">
+                    <a href="https://www.facebook.com/Barbercoiff-1187016228027978/photos/3234744536588460" target="_blank"><img src="src/client.jpg" alt="Coiffure d'un client"></a>
+                    <a href="https://www.facebook.com/Barbercoiff-1187016228027978/photos/2100300093366249" target="_blank"><img src="src/cliente.jpg" alt="Coiffure d'une cliente"></a>
+                    <a href="https://www.facebook.com/Barbercoiff-1187016228027978/photos/1195599957169605" target="_blank"><img src="src/client2.jpg" alt="Coiffure d'un client"></a>
+                    <a href="https://www.facebook.com/Barbercoiff-1187016228027978/photos/2100300100032915" target="_blank"><img src="src/cliente2.jpg" alt="Coiffure d'une cliente"></a>
+                    <a href="https://www.facebook.com/Barbercoiff-1187016228027978/photos/3379699745426271" target="_blank"><img src="src/client3.jpg" alt="Coiffure d'un client enfant"></a>
+                    <a href="https://www.facebook.com/Barbercoiff-1187016228027978/photos/2107746169288308" target="_blank"><img src="src/cliente3.jpg" alt="Coiffure d'une cliente"></a>
+                </div>
+                <form action="https://www.facebook.com/Barbercoiff-1187016228027978/photos/?ref=page_internal" target="_blank">
+                    <input type="submit" value="Voir plus" />
+                </form> 
+            </article>
+
+            <!-- LE SALON -->
+            <aside id="salon">
+                <div class="container-salon">
+                    <div class="container-salon-img">
+                        <img src="src/salon.jpg" alt="Image de la gaieté du salon">
+                    </div>
+                    <div class="card">
+                        <h2>Au salon</h2>
+                        <p>La gaieté et la complicité sont de mise !</p>
+                        <p>Passez un agréable moment en compagnie de votre coiffeur favori !</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Contact -->
+            <article class="sction" id="contact">
+                <h2>Contact</h2>
+                <div class="soulignement" id="soulignement_contact"></div>
+                <div class="container-contact flex-f">
+                    <div id="phone">
+                        <a href="tel:+3264226692"><i class="fas fa-phone"></i>064 22 66 92</a>
+                    </div>
+                    <div id="adresse">
+                        <a href="https://goo.gl/maps/wV3a2WX18CzfUvti9"><i class="fas fa-map-marker-alt"></i>7140 Morlanwelz-Mariemont (Morlanwelz) Place Albert Ier, 20</a>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.125202038846!2d4.2439791158962565!3d50.4573931947455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2375885319a27%3A0xf5a55fdd848984d4!2sBarbercoiff!5e0!3m2!1sfr!2sbe!4v1617710603099!5m2!1sfr!2sbe" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+
+            <!-- AVIS -->
+            <article class="sction" id="avis">
+                <h2>Avis</h2>
+                <div class="soulignement" id="soulignement_avis"></div>
+                <div class="container-avis flex-f">
+                    <div class="box-avis">
+                        <p>Hugo Duvivier</p>
+                        <p>9 septembre 2016</p>
+                        <p>Top je recomande </p>
+                    </div>
+                    
+                    <div class="box-avis">
+                        <p>Jordan Cucuzzella</p>
+                        <p>9 septembre 2016</p>
+                        <p>Top du top, je le recommande à tout le monde ✌ </p>
+                    </div>
+                    <div class="box-avis">
+                        <p>Antonio Di Luciano</p>
+                        <p>16 septembre 2016</p>
+                        <p>Rapidité et résultat au top du top ! 😉 </p>
+                    </div>
+                    <div class="box-avis">
+                        <p>Debora Victoria</p>
+                        <p>23 janvier 2019</p>
+                        <p>Travail méticuleux , professionnalisme, accueil chaleureux et produits de qualité. Top top top <br>Produits professionnels</p>
+                    </div>
+                    <div class="box-avis">
+                        <p>Theo Barone</p>
+                        <p>9 septembre 2016</p>
+                        <p>Personnel très chaleureux <br>Le travail effectué est de grande qualité 👏 <br>Travail de maître · Jolie décoration </p>
+                    </div>
+                </div>
+            </article>
+
+            
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="sction">
+            <a href="informations.html" target="_blank">Informations</a>
+            <p>2021 &copy; Colin Depelsenaire</p>
+            <a id="facebook" href="https://www.facebook.com/Barbercoiff-1187016228027978/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </footer>
+        
+
+        <script src="main.js"></script>
+    </body>
+</html>
