@@ -17,7 +17,7 @@ body {
 }
 
 :root {
-    --background : #1a1a2e;
+    --background : #000;
     --text : #ffffff;
     --red : #e9445f;
     --titre : 'Open Sans', sans-serif;
