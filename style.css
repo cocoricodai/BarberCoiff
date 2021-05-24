@@ -275,6 +275,7 @@ form button {
     font-weight: bold;
 }
 form button:visited {
+    background-color: var(--text);
     color: #000000;
 }
 form button:active ,form button:hover , form button:focus{
