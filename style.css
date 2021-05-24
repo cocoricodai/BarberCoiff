@@ -260,7 +260,7 @@ header#haut-de-page {
 form {
     margin-top: 3rem;
 }
-form input {
+form button {
     border: none;
     border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -274,10 +274,10 @@ form input {
     transition: 0.4s;
     font-weight: bold;
 }
-form input:visited {
+form button:visited {
     color: #000000;
 }
-form input:active ,form input:hover , form input:focus{
+form button:active ,form button:hover , form button:focus{
     background-color: var(--red);
     color: #ffffff;
 }
