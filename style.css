@@ -261,6 +261,8 @@ form {
     margin-top: 3rem;
 }
 form button {
+    background-color: var(--text);
+    color: #000000;
     border: none;
     border-radius: 50px;
     -webkit-border-radius: 50px;
